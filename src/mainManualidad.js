@@ -1,13 +1,13 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 import { getDocs, collection } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
-import { MostrarListaRollsRoyces } from "./app/CRUDMaestros.js";
+import { MostrarListaRollsRoyces } from "./app/CRUDRollsRoyces.js";
 import { revisaSesion } from "./app/revisaSesion.js";
 import { auth, db } from "./app/firebase.js";
 import './app/iniciaSesionEmailAndPass.js'
 import './app/iniciaSesionFacebook.js'
 import './app/iniciaSesionGoogle.js'
 import './app/formularioRegistro.js'
-import './app/subirManualidad.js'
+import './app/subirRollsRoyces.js'
 import './app/cierreSesion.js'
 
 onAuthStateChanged(auth, async (usuario) => {
