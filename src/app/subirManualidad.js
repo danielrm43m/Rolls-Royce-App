@@ -2,35 +2,35 @@ import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.6.0/fi
 import { db } from "./firebase.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-    const formularioSoldado = document.querySelector('#Formulario-Soldado');
+    const formularioRollsRoyce = document.querySelector('#Formulario-RollsRoyce');
 
-    formularioSoldado.addEventListener('submit', async (e) => {
+    formularioRollsRoyce.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const NOMBRE = formularioSoldado['Nombre-Soldado'].value;
-        const RANGO = formularioSoldado['Rango-Soldado'].value;
-        const ESPECIALIDAD = formularioSoldado['Especialidad-Soldado'].value;
-        const UNIDAD = formularioSoldado['Unidad-Soldado'].value;
-        const FECHA_INCORPORACION = formularioSoldado['FechaIncorporacion-Soldado'].value;
+        const MODELO = formularioRollsRoyce['Modelo-RollsRoyce'].value;
+        const AÑO = formularioRollsRoyce['Año-RollsRoyce'].value;
+        const COLOR = formularioRollsRoyce['Color-RollsRoyce'].value;
+        const PRECIO = parseInt(formularioRollsRoyce['Precio-RollsRoyce'].value);
+        const FECHA_FABRICACION = formularioRollsRoyce['FechaFabricacion-RollsRoyce'].value;
 
         try {
             // Utiliza addDoc para agregar un documento con un identificador generado automáticamente
-            const nuevoSoldadoRef = await addDoc(collection(db, 'Soldados'), {
-                Nombre: NOMBRE,
-                Rango: RANGO,
-                Especialidad: ESPECIALIDAD,
-                Unidad: UNIDAD,
-                FechaIncorporacion: FECHA_INCORPORACION
+            const nuevoRollsRoyceRef = await addDoc(collection(db, 'RollsRoyces'), {
+                Modelo: MODELO,
+                Año: AÑO,
+                Color: COLOR,
+                Precio: PRECIO,
+                FechaFabricacion: FECHA_FABRICACION
             });
 
             // Muestra un mensaje si todo sale bien
-            alert(`El soldado ${NOMBRE} ha sido registrado exitosamente`);
+            alert(`El Rolls Royce modelo ${MODELO} ha sido registrado exitosamente`);
 
             // Limpia el formulario
-            formularioSoldado.reset();
+            formularioRollsRoyce.reset();
         } catch (error) {
             // Maneja el error y muestra un mensaje con el error
-            alert('Error al registrar el soldado:', 'noValido');
+            alert('Error al registrar el Rolls Royce:', 'noValido');
         }
     });
 });

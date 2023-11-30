@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- El modulo Main contiene lo necesario para que el programa funcione -->
     <script type="module" src="./mainManualidad.js"></script>
-    <title>SOLDADOS MILITARES</title>
+    <title>ROLLS ROYCES APP</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <!-- Navbar con tema oscuro -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SOLDADOS MILITARES</a>
+            <a class="navbar-brand" href="#">ROLLS ROYCES APP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,11 +44,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link botonesConSesion" id="Mostrar-Manualidades"
-                                href="Subir Manualidades.html">REGISTRAR UN SOLDADO</a>
+                                href="Subir Manualidades.html">REGISTRAR UN ROLLS ROYCE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER
-                                SOLDADOS PRESENTES</a>
+                            <a class="nav-link botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER ROLLS ROYCES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link botonesConSesion" id="CerrarSesion">CERRAR SESIÓN</a>
@@ -61,35 +60,36 @@
 
     <!-- Contenido del cuerpo aquí -->
 
-    <!-- Formulario de Registro de Soldados -->
+    <!-- Formulario de Registro de Rolls Royces -->
     <div class="container p-4 mt-5">
         <div class="row">
-            <form id="Formulario-Soldado" class="col-md-6 mx-auto">
+            <form id="Formulario-RollsRoyce" class="col-md-6 mx-auto">
                 <div class="mb-3">
-                    <label for="Nombre-Soldado" class="form-label">Nombre del Soldado:</label>
-                    <input type="text" class="form-control" id="Nombre-Soldado" placeholder="Nombre del Soldado">
+                    <label for="Modelo-RollsRoyce" class="form-label">Modelo del Rolls Royce:</label>
+                    <input type="text" class="form-control" id="Modelo-RollsRoyce" placeholder="Modelo del Rolls Royce">
                 </div>
                 <div class="mb-3">
-                    <label for="Rango-Soldado" class="form-label">Rango del Soldado:</label>
-                    <input type="text" class="form-control" id="Rango-Soldado" placeholder="Rango del Soldado">
+                    <label for="Año-RollsRoyce" class="form-label">Año del Rolls Royce:</label>
+                    <input type="text" class="form-control" id="Año-RollsRoyce" placeholder="Año del Rolls Royce">
                 </div>
                 <div class="mb-3">
-                    <label for="Especialidad-Soldado" class="form-label">Especialidad del Soldado:</label>
-                    <input type="text" class="form-control" id="Especialidad-Soldado"
-                        placeholder="Especialidad del Soldado">
+                    <label for="Color-RollsRoyce" class="form-label">Color del Rolls Royce:</label>
+                    <input type="text" class="form-control" id="Color-RollsRoyce" placeholder="Color del Rolls Royce">
                 </div>
                 <div class="mb-3">
-                    <label for="Unidad-Soldado" class="form-label">Unidad del Soldado:</label>
-                    <input type="text" class="form-control" id="Unidad-Soldado" placeholder="Unidad del Soldado">
+                    <label for="Precio-RollsRoyce" class="form-label">Precio del Rolls Royce:</label>
+                    <input type="number" class="form-control" id="Precio-RollsRoyce"
+                        placeholder="Precio del Rolls Royce">
                 </div>
                 <div class="mb-3">
-                    <label for="FechaIncorporacion-Soldado" class="form-label">Fecha de Incorporación:</label>
-                    <input type="date" class="form-control" id="FechaIncorporacion-Soldado">
+                    <label for="FechaFabricacion-RollsRoyce" class="form-label">Fecha de Fabricación:</label>
+                    <input type="date" class="form-control" id="FechaFabricacion-RollsRoyce">
                 </div>
-                <button type="submit" class="btn btn-primary" id="Guardar-Soldado">Guardar Soldado</button>
+                <button type="submit" class="btn btn-primary" id="Guardar-RollsRoyce">Guardar Rolls Royce</button>
             </form>
         </div>
     </div>
+
 
 
     <!-- MODAL DE INICIO DE SESION -->

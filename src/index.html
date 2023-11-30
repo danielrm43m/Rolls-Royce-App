@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="./main.js"></script>
-    <title>SOLDADOS MILITARES</title>
+    <title>ROLLS ROYCES A</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <!-- Navbar con tema oscuro -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SOLDADOS MILITARES</a>
+            <a class="navbar-brand" href="#">ROLLS ROYCES APP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,11 +42,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link botonesConSesion" id="Mostrar-Manualidades"
-                                href="Subir Manualidades.html">REGISTRAR UN SOLDADO</a>
+                                href="Subir Manualidades.html">REGISTRAR UN ROLLS ROYCE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER
-                                SOLDADOS PRESENTES</a>
+                            <a class="nav-link botonesConSesion" id="Mostrar-Manualidades" href="index.html">VER ROLLS
+                                ROYCES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link botonesConSesion" id="CerrarSesion">CERRAR SESIÓN</a>
@@ -56,51 +56,54 @@
             </div>
         </div>
     </nav>
+
     <!-- Contenido del cuerpo aquí -->
-    <!-- Lista de Soldados -->
+
+    <!-- Lista de Rolls Royces -->
     <div class="container p-4 mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3 mt-5">
-                <ul class="list-group Soldados"></ul>
+                <ul class="list-group RollsRoyces"></ul>
             </div>
         </div>
     </div>
 
     <!-- MODAL DE ACTUALIZACIÓN -->
-    <div class="modal fade" id="ActualizarSoldado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ActualizarRollsRoyce" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content bg-dark text-light">
                 <div class="modal-header bg-dark">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Soldado</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar Rolls Royce</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="Formulario-ActualizarSoldado">
+                    <form id="Formulario-ActualizarRollsRoyce">
                         <div class="mb-3">
-                            <label for="Actualizar-Nombre">Nombre del Soldado</label>
-                            <input type="text" id="Actualizar-Nombre" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo nombre">
+                            <label for="Actualizar-Modelo">Modelo del Rolls Royce</label>
+                            <input type="text" id="Actualizar-Modelo" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo modelo">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-Rango">Rango</label>
-                            <input type="text" id="Actualizar-Rango" class="form-control mb-3"
-                                placeholder="Ingresa el nuevo rango">
+                            <label for="Actualizar-Año">Año</label>
+                            <input type="text" id="Actualizar-Año" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo año">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-Especialidad">Especialidad</label>
-                            <input type="text" id="Actualizar-Especialidad" class="form-control mb-3"
-                                placeholder="Ingresa la nueva especialidad">
+                            <label for="Actualizar-Color">Color</label>
+                            <input type="text" id="Actualizar-Color" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo color">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-Unidad">Unidad</label>
-                            <input type="text" id="Actualizar-Unidad" class="form-control mb-3"
-                                placeholder="Ingresa la nueva unidad">
+                            <label for="Actualizar-Precio">Precio</label>
+                            <input type="number" id="Actualizar-Precio" class="form-control mb-3"
+                                placeholder="Ingresa el nuevo precio">
                         </div>
                         <div class="mb-3">
-                            <label for="Actualizar-FechaIncorporacion">Fecha de Incorporación</label>
-                            <input type="date" id="Actualizar-FechaIncorporacion" class="form-control mb-3">
+                            <label for="Actualizar-FechaFabricacion">Fecha de Fabricación</label>
+                            <input type="date" id="Actualizar-FechaFabricacion" class="form-control mb-3">
                         </div>
-                        <button class="btn btn-primary w-100 mb-2 edit Boton-ActualizarSoldado">Actualizar</button>
+                        <button class="btn btn-primary w-100 mb-2 edit Boton-ActualizarRollsRoyce">Actualizar</button>
                     </form>
                 </div>
             </div>

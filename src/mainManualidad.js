@@ -1,6 +1,6 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 import { getDocs, collection } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
-import { MostrarListaSoldados } from "./app/CRUDMaestros.js";
+import { MostrarListaRollsRoyces } from "./app/CRUDMaestros.js";
 import { revisaSesion } from "./app/revisaSesion.js";
 import { auth, db } from "./app/firebase.js";
 import './app/iniciaSesionEmailAndPass.js'
@@ -16,14 +16,14 @@ onAuthStateChanged(auth, async (usuario) => {
 
         if (currentPath === '/src/index.html') {
             // Si el usuario está en el index, muestra la lista de manualidades
-            const querySnapshot = await getDocs(collection(db, 'Soldados'))
-            MostrarListaSoldados(querySnapshot.docs);
+            const querySnapshot = await getDocs(collection(db, 'RollsRoyces'))
+            MostrarListaRollsRoyces(querySnapshot.docs);
         } else if (currentPath === '/src/Subir Manualidades.html') {
             // Si el usuario está en la interfaz "Subir Manualidades.html", no muestra nada
-            MostrarListaSoldados([]);  // Puedes ajustar esto según tu lógica
+            MostrarListaRollsRoyces([]);  // Puedes ajustar esto según tu lógica
         }
     } else {
-        MostrarListaSoldados([]);  // Puedes ajustar esto según tu lógica
+        MostrarListaRollsRoyces([]);  // Puedes ajustar esto según tu lógica
     }
     revisaSesion(usuario);
 });
